@@ -24,7 +24,7 @@ var JsDBSource = {
                 var filtered_data = $.grep(response, function (client) {
                     return (!filter.Name || client.Name.indexOf(filter.Name) > -1)
                         && (!filter.Age || client.Age === filter.Age)
-                        && (!filter.Idea || client.Idea.indexOf(filter.Idea) > -1)
+                        && (!filter.Address || client.Address.indexOf(filter.Address) > -1)
                         && (!filter.Country || client.Country === filter.Country)
                 });
                 d.resolve(filtered_data);
@@ -102,7 +102,7 @@ var JsDBSource = {
             fields: [
                 {name: "Name", type: "text", width: 150},
                 {name: "Age", type: "number", width: 50},
-                {name: "Idea", type: "text", width: 200},
+                {name: "Address", type: "text", width: 200},
                 {name: "Country", type: "select", items: JsDBSource.countries, valueField: "Id", textField: "Name"},
                 {type: "control"}
             ],
