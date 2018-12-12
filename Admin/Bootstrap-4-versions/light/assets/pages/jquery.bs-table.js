@@ -45,7 +45,7 @@ $(window).load(function() {
 // Sample format for Invoice Column.
 // =================================================================
 function invoiceFormatter(value, row) {
-    return '<a href="#" class="btn-link" > Order #' + value + '</a>';
+    return '<a href="#" class="btn-link" > ' + value + '</a>';
 }
 
 // Sample Format for User Name Column.
@@ -66,13 +66,13 @@ function dateFormatter(value, row) {
 // =================================================================
 function statusFormatter(value, row) {
     var labelColor;
-    if (value == "Paid") {
+    if (value == "Discuss") {
         labelColor = "success";
-    } else if (value == "Unpaid") {
+    } else if (value == "Undiscuss") {
         labelColor = "warning";
-    } else if (value == "Shipped") {
+    } else if (value == "Delegate") {
         labelColor = "info";
-    } else if (value == "Refunded") {
+    } else if (value == "Undelegate") {
         labelColor = "danger";
     }
     var icon = row.id % 2 === 0 ? 'fa-star' : 'fa-user';
