@@ -65,7 +65,7 @@
             { y: '2014', a: 75,  b: 65, c: 90 },
             { y: '2015', a: 100, b: 90, c: 130 }
         ];
-        this.createStackedChart('morris-bar-stacked', $stckedData, 'y', ['a', 'b', 'c'], ['Desktops', 'Tablets', 'Mobiles'], ['#5fbeaa', '#5d9cec', '#ebeff2']);
+        this.createStackedChart('morris-bar-stacked', $stckedData, 'y', ['a', 'b', 'c'], ['Recreation', 'Public Health', 'Public Safety'], ['#5fbeaa', '#5d9cec', '#ebeff2']);
 
         //creating area chart
         var $areaDotData = [
@@ -77,7 +77,7 @@
                 { y: '2014', a: 75,  b: 65, c:30 },
                 { y: '2015', a: 90, b: 60, c:30 }
             ];
-        this.createAreaChartDotted('morris-area-with-dotted', 0, 0, $areaDotData, 'y', ['a', 'b', 'c'], ['Desktops ', 'Tablets ', 'Mobiles '],['#ffffff'],['#999999'], ['#5fbeaa', '#5d9cec','#ebeff2']);
+        this.createAreaChartDotted('morris-area-with-dotted', 0, 0, $areaDotData, 'y', ['a', 'b', 'c'], ['Recreation ', 'Public Health ', 'Public Safety '],['#ffffff'],['#999999'], ['#5fbeaa', '#5d9cec','#ebeff2']);
 
     },
     //init
